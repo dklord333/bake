@@ -46,16 +46,27 @@
             app:layout_constraintHeight_percent="0.2"
             app:layout_constraintTop_toBottomOf="@+id/itemviewPic" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:gravity="center"
-            android:id="@+id/itemprice"
-            android:text="1995 Rs"
-            android:textSize="18sp"
-            app:layout_constraintHeight_percent="0.13"
-            app:layout_constraintTop_toBottomOf="@+id/itemtitle"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintHeight_percent="0.14"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@+id/itemtitle" >
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/itemprice"
+                android:text="1995 Rs"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/itemtitle"
+                app:layout_constraintBottom_toBottomOf="parent" />
+            
+
+        </LinearLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
